@@ -1,1 +1,1 @@
-# Sponza
+# SponzaRender
