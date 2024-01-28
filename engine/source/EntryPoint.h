@@ -6,7 +6,7 @@
 // #include "Editor/Editor.h"
 // #include "Runtime/Engine.h"
 
-#ifdef TINY_ENGINE_PLATFORM_WINDOWS
+#ifdef SPONZA_RENDER_PLATFORM_WINDOWS
 
 // Entry point
 int main(int argc, char** argv)

@@ -52,10 +52,9 @@ project "SponzaRender"
 	-- windows平台
 	filter "system:windows"
 		systemversion "latest"
-
 		defines
 		{
-			SPONZA_RENDER_PLATFORM_WINDOWS,
+			"SPONZA_RENDER_PLATFORM_WINDOWS",
 		}
 
 	-- Debug配置项属性
