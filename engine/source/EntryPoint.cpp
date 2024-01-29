@@ -20,6 +20,10 @@ int main(int argc, char** argv)
 	editor.Clear();
 	engine.ShutdownEngine();
 
+	while(true) {
+		std::cout << "Hello World" << std::endl;
+	}
+
 	EXIT_SUCCESS;
 }
 
