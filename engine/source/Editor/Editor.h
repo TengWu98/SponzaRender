@@ -4,7 +4,7 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 	class Editor : public Singleton<Editor> {
 	public:
 		Editor();
-		virtual ~Editor();
+		 ~Editor();
 
 		void Init();
 		void Run();

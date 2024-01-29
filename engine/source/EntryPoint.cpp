@@ -10,6 +10,8 @@
 // Entry point
 int main(int argc, char** argv)
 {
+	LOG_DEV_WARN("Initialize Log!");
+
 	auto& engine = SponzaRender::Engine::Get();
 	auto& editor = SponzaRender::Editor::Get();
 	engine.Init();

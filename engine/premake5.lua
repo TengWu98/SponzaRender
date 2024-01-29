@@ -39,6 +39,7 @@ project "SponzaRender"
 	includedirs
 	{
 		"source",
+		"3rdparty/spdlog/include",
 		"%{IncludeDir.ImGui}",
 	}
 

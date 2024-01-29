@@ -19,3 +19,5 @@
 #include "Common/Macro.h"
 #include "Common/EngineWin.h"
 #include "Common/Singleton.h"
+
+#include "Runtime/Core/Logger/Logger.h"
