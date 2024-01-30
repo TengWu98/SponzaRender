@@ -16,8 +16,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "Common/Macro.h"
-#include "Common/EngineWin.h"
-#include "Common/Singleton.h"
+#include "Developer/Macro.h"
+#include "Developer/EngineWin.h"
+#include "Developer/Singleton.h"
 
 #include "Runtime/Core/Logger/Logger.h"
