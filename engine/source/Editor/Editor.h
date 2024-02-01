@@ -1,15 +1,20 @@
 #pragma once
+#include "Runtime/Engine.h"
 
 SPONZA_RENDER_NAMESPACE_BEGIN
-	class Editor : public Singleton<Editor> {
+	class Editor {
+		friend class Engine;
+
 	public:
 		Editor();
-		 ~Editor();
+		~Editor();
 
-		void Init();
+		void Init(Engine* engineRuntime);
 		void Run();
 		void Clear();
+
 	private:
+		Engine* m_pEngineRuntime;
 	};
 
 SPONZA_RENDER_NAMESPACE_END

@@ -4,27 +4,37 @@
 SPONZA_RENDER_NAMESPACE_BEGIN
 	Editor::Editor()
 	{
-		std::cout << "Editor::Editor()" << std::endl;
+		LOG_DEV_INFO("Editor Start");
 	}
 
 	Editor::~Editor()
 	{
-		std::cout << "Editor::~Editor()" << std::endl;
+		LOG_DEV_INFO("Editor End");
 	}
 
-	void Editor::Init()
+	void Editor::Init(Engine* engineRuntime)
 	{
-		std::cout << "Editor::Init()" << std::endl;
+		SPONZA_RENDER_ASSERT(engineRuntime, "Engine runtime is null");
+
+		m_pEngineRuntime = engineRuntime;
 	}
 
 	void Editor::Run()
 	{
-		std::cout << "Editor::Run()" << std::endl;
+		SPONZA_RENDER_ASSERT(m_pEngineRuntime, "Engine runtime is null");
+
+		float deltaTime;
+		while (true) {
+			LOG_DEV_INFO("Editor is running...");
+			deltaTime = m_pEngineRuntime->Tick();
+			if (!m_pEngineRuntime->TickOneFrame(deltaTime)) {
+				break;
+			}
+		}
 	}
 
 	void Editor::Clear()
 	{
-		std::cout << "Editor::Clear()" << std::endl;
 	}
 
 SPONZA_RENDER_NAMESPACE_END

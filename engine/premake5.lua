@@ -56,6 +56,7 @@ project "SponzaRender"
 		defines
 		{
 			"SPONZA_RENDER_PLATFORM_WINDOWS",
+			"SPONZA_RENDER_ENABLE_ASSERTS",
 		}
 
 	-- Debug配置项属性

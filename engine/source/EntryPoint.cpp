@@ -12,17 +12,17 @@ int main(int argc, char** argv)
 {
 	LOG_DEV_WARN("Initialize Log!");
 
-	auto& engine = SponzaRender::Engine::Get();
-	auto& editor = SponzaRender::Editor::Get();
-	engine.Init();
-	editor.Init();
-	editor.Run();
-	editor.Clear();
-	engine.ShutdownEngine();
+	auto engine = new SponzaRender::Engine();
+	engine->Init();
 
-	while(true) {
-		std::cout << "Hello World" << std::endl;
-	}
+	auto editor = new SponzaRender::Editor();
+	editor->Init(engine);
+
+	editor->Run();
+	editor->Clear();
+
+	engine->Clear();
+	engine->ShutdownEngine();
 
 	EXIT_SUCCESS;
 }

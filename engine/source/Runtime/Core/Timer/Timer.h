@@ -10,7 +10,7 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 		float Peek() const noexcept;
 
 	private:
-		std::chrono::steady_clock::time_point last;
+		std::chrono::steady_clock::time_point m_last;
 	};
 
 SPONZA_RENDER_NAMESPACE_END

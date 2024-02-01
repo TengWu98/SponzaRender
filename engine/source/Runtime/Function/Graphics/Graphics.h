@@ -1,0 +1,7 @@
+#pragma once
+
+SPONZA_RENDER_NAMESPACE_BEGIN
+	class Graphics {
+	};
+
+SPONZA_RENDER_NAMESPACE_END

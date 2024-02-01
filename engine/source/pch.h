@@ -21,3 +21,4 @@
 #include "Developer/Singleton.h"
 
 #include "Runtime/Core/Logger/Logger.h"
+#include "Runtime/Core/Timer/Timer.h"
