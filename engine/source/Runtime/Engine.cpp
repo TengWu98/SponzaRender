@@ -32,7 +32,7 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 	void Engine::Run()
 	{
 		// create window
-		m_spWindow = Window::Create(WindowProps(L"SponzaRender", 1280, 720));
+		m_spWindow = Window::Create(WindowCreateInfo(L"SponzaRender", 1280, 720));
 		SPONZA_RENDER_ASSERT(m_spWindow, "Window is null");
 
 		// loop
