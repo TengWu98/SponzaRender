@@ -25,7 +25,6 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 
 		float deltaTime;
 		while (true) {
-			LOG_DEV_INFO("Editor is running...");
 			deltaTime = m_pEngineRuntime->Tick();
 			if (!m_pEngineRuntime->TickOneFrame(deltaTime)) {
 				break;
