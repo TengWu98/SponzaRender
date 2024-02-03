@@ -10,7 +10,7 @@
 // Entry point
 int main(int argc, char** argv)
 {
-	LOG_DEV_WARN("Initialize Log!");
+	LOG_DEV_INFO("Initialize Log");
 
 	auto engine = new SponzaRender::Engine();
 	engine->Init();
@@ -19,10 +19,9 @@ int main(int argc, char** argv)
 	editor->Init(engine);
 
 	editor->Run();
-	editor->Clear();
 
-	engine->Clear();
-	engine->ShutdownEngine();
+	editor->Close();
+	engine->Shutdown();
 
 	EXIT_SUCCESS;
 }

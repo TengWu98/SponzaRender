@@ -11,7 +11,7 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 
 		void Init(Engine* engineRuntime);
 		void Run();
-		void Clear();
+		void Close();
 
 	private:
 		Engine* m_pEngineRuntime;

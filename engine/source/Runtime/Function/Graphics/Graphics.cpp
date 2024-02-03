@@ -1,3 +1,6 @@
 #include "pch.h"
 #include "Graphics.h"
 
+SPONZA_RENDER_NAMESPACE_BEGIN
+
+SPONZA_RENDER_NAMESPACE_END

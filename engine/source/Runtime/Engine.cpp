@@ -1,10 +1,12 @@
 #include "pch.h"
 #include "Engine.h"
 
+#include "Function/Global/RuntimeGlobalContext.h"
+
+
 SPONZA_RENDER_NAMESPACE_BEGIN
 	Engine::Engine()
 	{
-		LOG_DEV_INFO("Engine Start");
 	}
 
 	Engine::~Engine()
@@ -13,6 +15,9 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 
 	void Engine::Init()
 	{
+		g_runtimeGlobalContext.Init();
+
+		LOG_DEV_INFO("Initialize Engine");
 	}
 
 	float Engine::Tick()
@@ -29,26 +34,6 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 		return true;
 	}
 
-	void Engine::Run()
-	{
-		// create window
-		m_spWindow = Window::Create(WindowCreateInfo(L"SponzaRender", 1280, 720));
-		SPONZA_RENDER_ASSERT(m_spWindow, "Window is null");
-
-		// loop
-		// TODO(WT) modifiy true to a condition(window->ShouldClose)
-		while (true) {
-			float deltaTime = Tick();
-			if (!TickOneFrame(deltaTime)) {
-				break;
-			}
-		}
-	}
-
-	void Engine::Clear()
-	{
-	}
-
 	void Engine::LogicalTick(float deltaTime)
 	{
 	}
@@ -59,9 +44,9 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 	}
 
 
-	void Engine::ShutdownEngine()
+	void Engine::Shutdown()
 	{
-		LOG_DEV_INFO("Engine Shutdown");
+		LOG_DEV_INFO("Shutdown Engine");
 	}
 
 SPONZA_RENDER_NAMESPACE_END

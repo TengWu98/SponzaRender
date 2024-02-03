@@ -120,7 +120,7 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 #ifdef SPONZA_RENDER_PLATFORM_WINDOWS
 		return std::make_shared<Window>(windowPorps);
 #else
-	SPONZA_RENDER_ASSERT(false, "Unkown platform");
+	SPONZA_RENDER_ASSERT(false, "Unkown platform.");
 	return nullptr;
 #endif
 	}

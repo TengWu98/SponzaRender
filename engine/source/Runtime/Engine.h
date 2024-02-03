@@ -8,9 +8,7 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 		~Engine();
 
 		void Init();
-		void Run();
-		void Clear();
-		void ShutdownEngine();
+		void Shutdown();
 
 		float Tick();
 		bool TickOneFrame(float deltaTime);
