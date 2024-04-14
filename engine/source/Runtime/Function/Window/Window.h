@@ -1,8 +1,5 @@
 #pragma once
 
-#include "Runtime/Function/Input/Keyboard.h"
-#include "Runtime/Function/Input/Mouse.h"
-
 SPONZA_RENDER_NAMESPACE_BEGIN
 	struct WindowCreateInfo {
 		const wchar_t* Title;
@@ -11,8 +8,8 @@ SPONZA_RENDER_NAMESPACE_BEGIN
 		bool IsFullscreen;
 
 		WindowCreateInfo(const wchar_t* title = L"Sponza Render",
-		            unsigned int width = 1280,
-		            unsigned int height = 720)
+		                 unsigned int width = 1280,
+		                 unsigned int height = 720)
 			: Title(title), Width(width), Height(height), IsFullscreen(false)
 		{
 		}

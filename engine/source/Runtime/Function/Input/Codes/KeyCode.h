@@ -2,7 +2,7 @@
 #include "pch.h"
 
 SPONZA_RENDER_NAMESPACE_BEGIN
-	class Mouse {
+	enum class KeyCode {
 	};
 
 SPONZA_RENDER_NAMESPACE_END

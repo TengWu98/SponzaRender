@@ -1,8 +1,5 @@
-#pragma once
 #include "pch.h"
+#include "Input.h"
 
 SPONZA_RENDER_NAMESPACE_BEGIN
-	class Keyboard {
-	};
-
 SPONZA_RENDER_NAMESPACE_END

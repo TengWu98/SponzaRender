@@ -1,0 +1,6 @@
+#include "pch.h"
+#include "Math.h"
+
+SPONZA_RENDER_NAMESPACE_BEGIN
+
+SPONZA_RENDER_NAMESPACE_END
